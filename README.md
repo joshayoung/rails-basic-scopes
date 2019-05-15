@@ -1,3 +1,5 @@
 # README
 
-This repo will house the code for my introduction to rails scopes (explained on my website).
+Steps Used to Setup Code Base:
+* Create the model
+  * rails g model student first:string last:string age:string grade_average:string active:boolean last_attendance:date

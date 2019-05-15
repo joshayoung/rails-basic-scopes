@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  first: MyString
+  last: MyString
+  age: MyString
+  grade_average: MyString
+  active: false
+  last_attendance: 2019-05-14
+
+two:
+  first: MyString
+  last: MyString
+  age: MyString
+  grade_average: MyString
+  active: false
+  last_attendance: 2019-05-14
