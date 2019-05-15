@@ -5,3 +5,5 @@ Steps Used to Setup Code Base:
   * rails g model student first:string last:string age:string grade_average:string active:boolean last_attendance:date
 * Create the controller
   * rails g controller students
+* Create a basic set of routes
+* Add a single index view file and controller action
