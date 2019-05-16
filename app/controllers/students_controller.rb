@@ -1,5 +1,6 @@
 class StudentsController < ApplicationController
   def index
-    @test = "Basic View"
+    @active_students = Student.active_students
+    @active_students_scope = Student.active
   end
 end
