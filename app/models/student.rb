@@ -2,7 +2,9 @@ class Student < ApplicationRecord
   scope :active, -> { where(active: true) }
   scope :passing, -> { where("grade_average > 90") }
   scope :order_by_last, -> { order('last') }
-  scope :find_last_name, -> (last_name) { where(last: last_name) }
+
+  # Prevent nil from being added to where clause:
+  scope :find_last_name, -> (last_name) { where(last: last_name) if last_name.present? }
 
   def self.active_students
     where(active: true)
