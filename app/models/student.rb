@@ -11,4 +11,8 @@ class Student < ApplicationRecord
   def self.best_students
     self.active.passing
   end
+
+  def self.recent_attendance
+    where("last_attendance > '2019-05-03'").passing.active.to_sql
+  end
 end

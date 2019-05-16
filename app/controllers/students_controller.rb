@@ -5,5 +5,6 @@ class StudentsController < ApplicationController
     @best_students_scope = Student.best_students
     @order_by_last = Student.order_by_last
     @last_name_eq_bosco = Student.find_last_name("Bosco")
+    @recent_attendance = Student.recent_attendance
   end
 end
